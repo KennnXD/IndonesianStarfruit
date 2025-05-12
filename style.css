@@ -1,0 +1,233 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Styles */
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: transparent;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.navbar-menu a.active {
+    color: #ffc107;
+}
+
+.contact-btn {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('path/to/coconut-trees-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.company-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    color: #ffc107;
+    font-size: 2rem;
+}
+
+/* Values Section Styles */
+.values-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.value-item {
+    max-width: 300px;
+    padding: 20px;
+}
+
+.value-item img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+/* Products Section Styles */
+.products-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card {
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Production Section Styles */
+.production-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.production-video {
+    flex: 1;
+    position: relative;
+}
+
+.production-video img {
+    width: 100%;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.production-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.certification-logo {
+    max-height: 50px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #ffc107;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: white;
+    color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar, .about-section, .products-grid, .production-section {
+        flex-direction: column;
+    }
+
+    .navbar-menu {
+        display: none; /* Consider adding mobile menu */
+    }
+
+    .about-content, .production-content {
+        padding: 0;
+        margin-top: 20px;
+    }
+}
