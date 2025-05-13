@@ -53,7 +53,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('path/to/coconut-trees-background.jpg');
+    background-image: url(carambolatree.webp)');
     background-size: cover;
     background-position: center;
     color: white;
